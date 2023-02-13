@@ -71,6 +71,27 @@ var listItems = document.querySelectorAll('li');
     for(let index=0; index < listItems.length;index++){
         listItems[index].style.color="red";
     }
+
+element=document.getElementsByTagName('ul')[0];
+
+//gyermek elemek elválasztása
+
+var child = element.childNodes;
+
+child = element.childNodes[1].childNodes;
+
+child=element.children;
+
+child=element.children[2].innerHTML;
+
+
+//amig van további elem adiglehet tovább fűzögetni
+
+child = element.firstChild;//node
+child = element.firstElementChild;//element
+
+console.log(child);
+    
 /*
     //dom elemek cseréje törlése
 
