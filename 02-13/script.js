@@ -7,7 +7,7 @@
 
 var doc = document;
 
-//document tukajdonságai
+//document tulajdonságai
 doc = document.all;
 doc = document.all.length;
 doc = document[17];
@@ -33,4 +33,54 @@ element= document.querySelectorAll('.p-3');
 element= document.querySelectorAll('ul li');
 element= document.querySelectorAll('li:nth-child(odd)');
 
-console.log(element);
+//DOM elemek modosítása
+//tartalom modositasa
+
+element = document.getElementById('list-title');
+
+//csak a szoveget ,ahogy begjelene
+
+element.innerHTML="Hello <br> Lista!";
+element.innerHTML="Hello <br> Lista!";
+
+console.log(document.getElementById('list-wrapper').innerText);
+
+//elem tulajdonságok megtekintése ,modositása
+//attributes
+
+element=document.querySelector("li:first-child");
+
+console.log(element.id);
+
+element.id='First-list-item';
+
+console.log(element.id);
+
+element.className ="p-3";
+
+console.log(element.style);
+element.style.color="red";
+element.style.margin="100px 50px 0 0";
+element.style.display="none";
+
+//tobb elem stylusának változtatása
+
+var listItems = document.querySelectorAll('li');
+    //listItesms.style.color = "red";
+
+    for(let index=0; index < listItems.length;index++){
+        listItems[index].style.color="red";
+    }
+/*
+    //dom elemek cseréje törlése
+
+    //csere
+    //uj elem letrehozzasa
+
+    var newElement=document.createElement("li");
+    newElement.className="list-group-item";
+    newElement.setAttribute("title","newListItem");
+
+    newElement.appendChild(document.createTextNode("uj lista header"));
+*/
+
