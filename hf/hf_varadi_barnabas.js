@@ -52,8 +52,8 @@ console.log(szog3(a,m,t));
 */
 
 function novekvo(rendezett){
-    for (let i = rendezett.lenght;i>0;i--){
-        for (let j = 0;j<i;j++){
+    for (let i = rendezett.lenght-1;i>0;i++){
+        for (let j = 0;j.lenght-1;j++){
             if(rendezett[j]>rendezett[i]){
                 var csere = rendezett[j];
                 rendezett[j]=rendezett[i];
@@ -73,7 +73,7 @@ function swap(tomb,forditott){
     return forditott;
 }
 
-var tomb = [9, 9, 2, 3, 4];
+let tomb = [9, 9, 2, 3, 4];
 var rendezett=[];
 function masolat(x){
     for (let i=0;i<tomb.length;i++){
