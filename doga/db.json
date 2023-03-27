@@ -1,0 +1,12 @@
+{
+    "vasarlo":[
+        {
+            "id":1,
+            "name":"Nagy Sándor",
+            "rendelesdatum": "2023-03-27", 
+            "cim" :"Pécs, Hunyadi utca 43",
+            "type": "Capuccino",
+            "menyiseg": "1db 0.5l"
+        }
+    ]
+}

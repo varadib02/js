@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fetch with JSON-Server</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container mt-5">
+        <h1 class="text-center">JSON Server</h1>
+        <table class="table mt-5">
+            <thead>
+                <tr>
+                  <th scope="col">Id</th>
+                  <th scope="col">Name</th>
+                  <th scope="col">Rendelesi Dátum</th>
+                  <th scope="col">Cím</th>
+                  <th scope="col">kávé típus</th>
+                  <th scope="col">Menyiseg</th>
+                </tr>
+              </thead>
+              <tbody id="tbody">
+                <div id="tr"></div>
+              </tbody>
+        </table>
+    </div>
+    <div class="container mt-5">
+        <form class="w-50 m-auto d-flex flex-column">
+            <div class="form-group mb-2">
+                <label for="inputid">ID</label>
+                <input type="id" class="form-control" id="inputid" placeholder="Enter ID">
+              </div>
+            <div class="form-group mb-2">
+                <label for="inputname">Name</label>
+                <input type="name" class="form-control" id="inputName" placeholder="Enter name">
+              </div>
+            <div class="form-group mb-2">
+                <label for="inputrendelesdatum">rendelesdatum</label>
+                <input type="rendelesdatum" class="form-control" id="inputrendelesdatum" placeholder="Enter Rendeles Dátuma">
+              </div>
+              <div class="form-group mb-2">
+                <label for="inputcim">cim</label>
+                <input type="cim" class="form-control" id="inputcim" placeholder="Enter cim">
+              </div>
+              <div class="form-group mb-2">
+                <label for="inputtype">type</label>
+                <input type="type" class="form-control" id="inputtype" placeholder="Enter Kávé típusa">
+              </div>
+              <div class="form-group mb-2">
+                <label for="inputEmail">menyiseg</label>
+                <input type="menyiseg" class="form-control" id="inputmenyiseg" placeholder="Enter db">
+              </div>
+                  <button type="submit" class="btn btn-secondary" id="submitBtn">CREATE/UPDATE</button>
+                  <button type="submit" class="btn btn-danger" id="deleteBtn">DELETE</button>
+              
+        </form>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+</body>
+</html>

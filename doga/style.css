@@ -1,0 +1,14 @@
+*{
+    box-sizing: border-box;
+}
+
+.container{
+    text-align: center;
+}
+
+table{
+    margin: auto;
+}
+th{
+    padding: 10px;
+}
