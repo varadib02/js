@@ -1,0 +1,6 @@
+:host {
+    display: block;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+

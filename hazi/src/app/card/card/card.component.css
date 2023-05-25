@@ -1,0 +1,13 @@
+@import "bulma/css/bulma.css";
+
+.card{
+    max-width: 400px;
+    max-height: 400px;
+    margin: auto;
+    margin-bottom: 25px;
+    background-color: burlywood;
+    border: 1px solid black;
+
+}
+
+
